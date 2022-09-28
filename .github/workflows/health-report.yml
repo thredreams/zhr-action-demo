@@ -14,9 +14,13 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - username: ZJU_USERNAME
-            password: ZJU_PASSWORD
+          - username: 22251247
+            password: zj111111zj
             # 如果出现登录异常，可以配置 ZJU_COOKIE secret，请参考 https://github.com/upupming/zhr-action#%E7%99%BB%E5%BD%95%E5%BC%82%E5%B8%B8 获取 ZJU_COOKIE 的值
+            cookie_eai_sess: ZJU_COOKIE
+            dingtalk_token: 4849cb0731c8ed76babc5e15f40e403ea9a16bd12060dd928dd86b890fb13fde
+          - username: 22251149
+            password: ljy15259076310
             cookie_eai_sess: ZJU_COOKIE
             dingtalk_token: 4849cb0731c8ed76babc5e15f40e403ea9a16bd12060dd928dd86b890fb13fde
     steps:
